@@ -12,6 +12,10 @@
           </div>
       </div> 
   </nav>
+
+  <div class="main-menu">
+      <h1>Main Menu</h1>
+  </div>
 </template>
 
 <script>
@@ -75,5 +79,13 @@ export default {
     }
     .burguer-menu.bottom{
         top: 12px;
+    }
+
+    .main-menu{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #EEB76B;
     }
 </style>

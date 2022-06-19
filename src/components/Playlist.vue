@@ -1,9 +1,20 @@
 <template>
-  Playlist
+<div class="playlist">
+    <h2>Previous Show Episodes</h2>
+    <Carrousel :videos="playlist"/>
+</div>
+    
 </template>
 
 <script>
+
+import Carrousel from './Carrousel.vue';
+
 export default {
+
+    components: {
+        Carrousel
+    },
 
     beforeMount(){
        
@@ -18,6 +29,7 @@ export default {
            
                 let data = await res.json()
                 this.playlist = data.items
+
                 console.log(this.playlist)
 
             }
@@ -35,5 +47,10 @@ export default {
 </script>
 
 <style>
-
+    .playlist h2{
+        font-family: 'League Gothic', sans-serif;
+        color: #000;
+        letter-spacing: 3px;
+        text-decoration: underline;
+    }
 </style>

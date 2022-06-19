@@ -22,7 +22,7 @@ export default {
            
                 let data = await res.json()
                 console.log(data.items[data.items.length - 1].snippet)
-                this.lastVideo.url = `https://www.youtube.com/embed/${data.items[data.items.length - 1].snippet.resourceId.videoId}?&autoplay=1&modestbranding=1`
+                this.lastVideo.url = `https://www.youtube.com/embed/${data.items[data.items.length - 1].snippet.resourceId.videoId}?&modestbranding=1`
 
 
             }
