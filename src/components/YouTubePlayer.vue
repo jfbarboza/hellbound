@@ -57,4 +57,17 @@ export default {
      width: 800px;
      height: 600px;
  }
+
+ @media only screen and (max-width: 600px) {
+
+  .player-wrapper{
+    display: block;
+    height: auto;
+  }  
+  .player-wrapper iframe {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+}
 </style>

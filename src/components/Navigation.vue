@@ -162,12 +162,13 @@ export default {
         height: 100vh;
         background-color: #EEB76B;
         top: -100vh;
+        padding-top: 100px;
         transition: all 0.5s;
         z-index: 5;
     }
 
     .main-menu.active{
-        top: 100px;
+        top: 0px;
     }
 
     .main-menu h1{
@@ -199,6 +200,16 @@ export default {
         color: #000;
         transition: 0.3s;
     }
+    
+    @media only screen and (max-width: 600px) {
+        nav{
+            padding: 0 1rem;
+        }
 
+        .social-nav li{
+            padding-left: 10px;
+        }
+        
+    }
 
 </style>

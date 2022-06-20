@@ -34,7 +34,7 @@
         data(){
             return{
                 settings: {
-                    itemsToShow: 1,
+                    itemsToShow: 1.5,
                     snapAlign: 'center',
                     },
                     // breakpoints are mobile first
@@ -86,6 +86,23 @@
 
 .carousel__prev, .carousel__next, .carousel__pagination-button--active{
     background: #E2703A;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .carousel__prev{
+        left: 30px;
+    }
+
+    .carousel__next{
+        right: 30px;
+    }
+
+    ol{
+        padding-left: 0;
+    }
+
 }
 
 
