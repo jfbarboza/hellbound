@@ -1,19 +1,19 @@
 <template>
 <div class="playlist">
     <h2>Previous Show Episodes</h2>
-    <Carrousel :videos="playlist"/>
+    <Carousel :videos="playlist"/>
 </div>
     
 </template>
 
 <script>
 
-import Carrousel from './Carrousel.vue';
+import Carousel from './Carousel.vue';
 
 export default {
 
     components: {
-        Carrousel
+        Carousel
     },
 
     mounted(){
