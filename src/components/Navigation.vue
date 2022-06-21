@@ -162,13 +162,14 @@ export default {
         height: 100vh;
         background-color: #EEB76B;
         top: -100vh;
-        padding-top: 100px;
+        padding-top: 0px;
         transition: all 0.5s;
         z-index: 5;
     }
 
     .main-menu.active{
         top: 0px;
+        padding-top: 100px;
     }
 
     .main-menu h1{
