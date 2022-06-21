@@ -16,7 +16,7 @@ export default {
         Carrousel
     },
 
-    beforeMount(){
+    mounted(){
        
             const getYoutube = async () =>{
 
