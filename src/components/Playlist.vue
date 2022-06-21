@@ -28,7 +28,7 @@ export default {
                 })
            
                 let data = await res.json()
-                this.playlist = data.items
+                this.playlist = await data.items
 
                 console.log(this.playlist)
 
