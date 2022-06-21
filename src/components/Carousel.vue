@@ -7,6 +7,20 @@
     navigation
     :pagination="{ clickable: true }"
     :scrollbar="{ draggable: true }"
+    :breakpoints="{
+
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+        },
+
+      768: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 4
+      }
+    }"
     @swiper="onSwiper"
     @slideChange="onSlideChange">
     <SwiperSlide v-for="video in videos" :key="video.id">
@@ -60,4 +74,11 @@
 
 <style>
 
+    .swiper-button-next, .swiper-button-prev{
+        color: #E2703A;
+    }
+
+    .swiper-pagination-bullet-active{
+        background: #E2703A;
+    }
 </style>
