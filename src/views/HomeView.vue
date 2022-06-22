@@ -12,10 +12,10 @@ import Playlist from '../components/Playlist.vue';
 import Banner from '@/components/Banner.vue';
 
 
+
 export default {
   name: 'HomeView',
   components: {
-    Navigation,
     YouTubePlayer,
     Playlist,
     Banner
